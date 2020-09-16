@@ -1,9 +1,15 @@
-function takeANumber(katzDeliLine,newCustomer) {
-  katzDeliLine.push(newCustomer);
-  var spotInLine = katzDeliLine.indexOf(newCustomer);
-  spotInLine++;
-  var greeting = "Welcome, " + newCustomer + ". You are number " + spotInLine + " in line.";
-  return greeting;
+// function takeANumber(katzDeliLine,newCustomer) {
+//   katzDeliLine.push(newCustomer);
+//   var spotInLine = katzDeliLine.indexOf(newCustomer);
+//   spotInLine++;
+//   var greeting = "Welcome, " + newCustomer + ". You are number " + spotInLine + " in line.";
+//   return greeting;
+// }
+var activeNumber= 0;
+function takeANumber(){
+  var str = "Welcome number ";
+  activeNumber++;
+  return str + activeNumber;
 }
 
 function nowServing(katzDeliLine) {
